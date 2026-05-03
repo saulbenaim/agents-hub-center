@@ -1,0 +1,45 @@
+{
+  "conversations": {
+    "C2200:1714748400.092": {
+      "channel": "C2200",
+      "thread_ts": "1714748400.092",
+      "participants": ["U1001", "U2839"],
+      "summary": "Aria flagged that the onboarding email copy still mentions the old pricing tiers; assigned follow-up to Saul.",
+      "last_updated": "2026-05-03T16:24:52Z"
+    },
+    "D9101:U1001": {
+      "channel": "D9101",
+      "participants": ["U1001"],
+      "summary": "Saul drafted next week's investor update outline; Homie is tracking three open questions for Friday.",
+      "last_updated": "2026-05-03T17:31:11Z"
+    },
+    "C2200:1714737600.118": {
+      "channel": "C2200",
+      "thread_ts": "1714737600.118",
+      "participants": ["U2839"],
+      "summary": "Aria confirmed the new design system tokens shipped; no blockers.",
+      "last_updated": "2026-05-03T13:30:28Z"
+    }
+  },
+  "users": {
+    "U1001": {
+      "name": "Saul Benaim",
+      "role": "founder",
+      "preferences": {
+        "digest_time": "09:00",
+        "review_time": "18:00",
+        "tone": "direct"
+      }
+    },
+    "U2839": {
+      "name": "Aria Chen",
+      "role": "design_lead",
+      "preferences": { "tone": "warm" }
+    },
+    "U3010": {
+      "name": "Henry Park",
+      "role": "engineering",
+      "preferences": {}
+    }
+  }
+}

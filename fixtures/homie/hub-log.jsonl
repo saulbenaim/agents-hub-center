@@ -1,0 +1,50 @@
+{"ts": "2026-05-02T08:32:11Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U2839", "channel": "D9938"}
+{"ts": "2026-05-02T08:32:18Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "D9938", "tokens": 482, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-02T09:11:02Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U1001", "channel": "C2200"}
+{"ts": "2026-05-02T09:11:09Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "C2200", "tokens": 612, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-02T11:05:44Z", "agent": "homie", "event": "task_created", "tool": "notion_tasks", "title": "Draft Q2 board update", "owner": "U1001"}
+{"ts": "2026-05-02T13:48:20Z", "agent": "homie", "event": "message_received", "trigger": "slack_thread_reply", "user": "U2839", "channel": "C2200", "thread_ts": "1714652900.123"}
+{"ts": "2026-05-02T13:48:27Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "C2200", "tokens": 301, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-02T14:22:10Z", "agent": "homie", "event": "error", "where": "notion_tasks.create", "message": "429 rate_limited; retried_after_ms=2100", "recovered": true}
+{"ts": "2026-05-02T16:03:55Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U3010", "channel": "C2200"}
+{"ts": "2026-05-02T16:04:02Z", "agent": "homie", "event": "message_responded", "user": "U3010", "channel": "C2200", "tokens": 220, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-02T18:00:01Z", "agent": "homie", "event": "scheduled_review_sent", "trigger": "scheduled_review_6pm_weekdays", "channel": "C2200", "items": 7}
+{"ts": "2026-05-02T18:42:11Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U1001", "channel": "D9101"}
+{"ts": "2026-05-02T18:42:19Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "D9101", "tokens": 540, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-02T20:18:33Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U2839", "channel": "C2200"}
+{"ts": "2026-05-02T20:18:41Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "C2200", "tokens": 410, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-02T22:05:09Z", "agent": "homie", "event": "task_created", "tool": "notion_tasks", "title": "Send investor update Friday", "owner": "U1001"}
+{"ts": "2026-05-03T07:14:51Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U1001", "channel": "D9101"}
+{"ts": "2026-05-03T07:14:58Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "D9101", "tokens": 318, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T08:02:33Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U2839", "channel": "C2200"}
+{"ts": "2026-05-03T08:02:39Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "C2200", "tokens": 290, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T09:00:04Z", "agent": "homie", "event": "scheduled_digest_sent", "trigger": "scheduled_digest_9am_weekdays", "channel": "C2200", "items": 9}
+{"ts": "2026-05-03T09:32:12Z", "agent": "homie", "event": "message_received", "trigger": "slack_thread_reply", "user": "U3010", "channel": "C2200", "thread_ts": "1714720800.001"}
+{"ts": "2026-05-03T09:32:18Z", "agent": "homie", "event": "message_responded", "user": "U3010", "channel": "C2200", "tokens": 256, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-03T10:14:02Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U2839", "channel": "D9938"}
+{"ts": "2026-05-03T10:14:11Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "D9938", "tokens": 470, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T10:55:37Z", "agent": "homie", "event": "task_created", "tool": "notion_tasks", "title": "Review Aria's design draft", "owner": "U2839"}
+{"ts": "2026-05-03T11:21:18Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U1001", "channel": "C2200"}
+{"ts": "2026-05-03T11:21:25Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "C2200", "tokens": 380, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T12:02:44Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U3010", "channel": "C2200"}
+{"ts": "2026-05-03T12:02:51Z", "agent": "homie", "event": "message_responded", "user": "U3010", "channel": "C2200", "tokens": 224, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-03T12:48:09Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U1001", "channel": "D9101"}
+{"ts": "2026-05-03T12:48:16Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "D9101", "tokens": 612, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T13:30:22Z", "agent": "homie", "event": "message_received", "trigger": "slack_thread_reply", "user": "U2839", "channel": "C2200", "thread_ts": "1714737600.118"}
+{"ts": "2026-05-03T13:30:28Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "C2200", "tokens": 195, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-03T14:11:42Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U1001", "channel": "C2200"}
+{"ts": "2026-05-03T14:11:49Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "C2200", "tokens": 348, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T14:55:06Z", "agent": "homie", "event": "task_created", "tool": "notion_tasks", "title": "Schedule kickoff with Henry", "owner": "U1001"}
+{"ts": "2026-05-03T15:18:31Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U2839", "channel": "D9938"}
+{"ts": "2026-05-03T15:18:38Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "D9938", "tokens": 428, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T15:48:14Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U3010", "channel": "C2200"}
+{"ts": "2026-05-03T15:48:21Z", "agent": "homie", "event": "message_responded", "user": "U3010", "channel": "C2200", "tokens": 271, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-03T16:24:45Z", "agent": "homie", "event": "message_received", "trigger": "slack_thread_reply", "user": "U1001", "channel": "C2200", "thread_ts": "1714748400.092"}
+{"ts": "2026-05-03T16:24:52Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "C2200", "tokens": 502, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T16:58:11Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U2839", "channel": "C2200"}
+{"ts": "2026-05-03T16:58:18Z", "agent": "homie", "event": "message_responded", "user": "U2839", "channel": "C2200", "tokens": 318, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T17:31:04Z", "agent": "homie", "event": "message_received", "trigger": "slack_dm", "user": "U1001", "channel": "D9101"}
+{"ts": "2026-05-03T17:31:11Z", "agent": "homie", "event": "message_responded", "user": "U1001", "channel": "D9101", "tokens": 244, "model": "claude-haiku-4-5"}
+{"ts": "2026-05-03T17:53:30Z", "agent": "homie", "event": "message_received", "trigger": "slack_mention", "user": "U3010", "channel": "C2200"}
+{"ts": "2026-05-03T17:55:02Z", "agent": "homie", "event": "message_responded", "user": "U3010", "channel": "C2200", "tokens": 410, "model": "claude-sonnet-4-6"}
+{"ts": "2026-05-03T18:00:01Z", "agent": "homie", "event": "scheduled_review_sent", "trigger": "scheduled_review_6pm_weekdays", "channel": "C2200", "items": 6}
