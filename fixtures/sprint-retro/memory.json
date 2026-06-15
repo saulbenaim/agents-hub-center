@@ -1,0 +1,8 @@
+{
+  "playbook": "docs/agent-playbook.md (Listados repo) — auto-append, audit via git history",
+  "sendback_rate_history": [
+    { "sprint": "M3-r1", "tickets": 1, "sent_back": 0, "rate": 0.0 },
+    { "sprint": "M3-r2", "tickets": 1, "sent_back": 1, "rate": 1.0 }
+  ],
+  "autonomy_signal": "When sendback_rate trends toward 0 across sprints, the gatekeeper can graduate from send-back-once to a hard gate and run less supervised."
+}

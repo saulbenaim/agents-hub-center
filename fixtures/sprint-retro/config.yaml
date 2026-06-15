@@ -1,0 +1,15 @@
+name: Sprint Retro
+project: Listados
+class: product
+team: sprint-listados
+description: Learns from the gatekeeper — classifies review findings as one-off vs pattern, auto-appends patterns to the playbook, and tracks the send-back rate as the autonomy-readiness signal.
+triggers:
+  - name: /sprint
+    type: manual
+    description: Final phase of /sprint, after PRs are open.
+tools:
+  - github
+models:
+  retro: claude-sonnet-4-6
+skills:
+  - sprint

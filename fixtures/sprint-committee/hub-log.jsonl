@@ -1,0 +1,6 @@
+{"ts": "2026-06-13T23:20:00Z", "agent": "sprint-committee", "event": "sprint_planned", "skill": "sprint", "milestone": "M3", "tickets_considered": 13}
+{"ts": "2026-06-13T23:21:30Z", "agent": "sprint-committee", "event": "keystone_identified", "skill": "sprint", "ticket": "LIS-34", "reason": "auth blocks publish, gating, nav, mis-publicaciones"}
+{"ts": "2026-06-13T23:22:10Z", "agent": "sprint-committee", "event": "plan_presented", "skill": "sprint", "round": 1, "build": ["LIS-34"]}
+{"ts": "2026-06-14T22:30:00Z", "agent": "sprint-committee", "event": "sprint_planned", "skill": "sprint", "milestone": "M3", "round": 2}
+{"ts": "2026-06-14T22:31:05Z", "agent": "sprint-committee", "event": "dependency_caught", "skill": "sprint", "finding": "LIS-69 already covered by LIS-34; LIS-88 depends on LIS-35 (cannot parallelize)"}
+{"ts": "2026-06-14T22:31:40Z", "agent": "sprint-committee", "event": "plan_presented", "skill": "sprint", "round": 2, "build": ["LIS-35"], "close": ["LIS-69"], "defer": ["LIS-88"]}

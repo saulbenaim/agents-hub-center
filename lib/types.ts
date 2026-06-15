@@ -13,6 +13,10 @@ export type AgentConfig = {
   name: string;
   project: string;
   class: "infrastructure" | "product" | "research" | "ops" | string;
+  // Optional grouping: agents that belong to the same team (e.g. a /sprint
+  // org chart of committee/builder/gatekeeper/retro). Additive — the v0 list
+  // renders one card per agent; a future ticket can group cards by `team`.
+  team?: string;
   description?: string;
   triggers?: AgentTrigger[];
   tools?: string[];
@@ -39,6 +43,9 @@ export type StatusDot = "green" | "yellow" | "red" | "grey";
 
 // Card-shaped derived type used by the Agents List page.
 export type AgentSummary = {
+  // Stable agent key / fixture folder (e.g. "sprint-committee") — used for the
+  // detail-page href. Distinct from `name`, which is the human display name.
+  key: string;
   name: string;
   project: string;
   agentClass: string;

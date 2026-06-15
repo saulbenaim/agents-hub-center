@@ -5,7 +5,15 @@ import type { AgentSummary, StatusDot } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-const ROSTER = ["homie"] as const;
+const ROSTER = [
+  "homie",
+  // /sprint agent team (Listados) — committee plans, builder builds, gatekeeper
+  // reviews, retro learns. See fixtures/sprint-*. MAI-21 will make this dynamic.
+  "sprint-committee",
+  "sprint-builder",
+  "sprint-gatekeeper",
+  "sprint-retro",
+] as const;
 const HEADLINE_PLACEHOLDER = "Working normally";
 
 async function loadSummary(agent: string): Promise<AgentSummary> {
@@ -24,6 +32,7 @@ async function loadSummary(agent: string): Promise<AgentSummary> {
   }
 
   return {
+    key: agent,
     name: config.name,
     project: config.project,
     agentClass: config.class,

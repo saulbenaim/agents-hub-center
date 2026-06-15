@@ -1,0 +1,13 @@
+{
+  "definition_of_done": [
+    "Read docs/agent-playbook.md before writing.",
+    "Build with existing helpers; match design + Venezuelan Spanish.",
+    "lint + typecheck + build must pass.",
+    "Self-review against acceptance criteria AND playbook rules.",
+    "Commit referencing the ticket; never push or open a PR."
+  ],
+  "recent_builds": [
+    { "ticket": "LIS-34", "model": "claude-opus-4-8", "outcome": "passed review round 1" },
+    { "ticket": "LIS-35", "model": "claude-sonnet-4-6", "outcome": "sent back once, then passed; later owner_id hotfix" }
+  ]
+}

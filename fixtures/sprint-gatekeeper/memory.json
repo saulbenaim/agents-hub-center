@@ -1,0 +1,12 @@
+{
+  "enforces_playbook": "docs/agent-playbook.md (Listados repo)",
+  "rules": {
+    "L1": "owner_id is profiles.id, never auth.uid() (RLS uses current_profile_id())",
+    "L2": "draft save != publish modal",
+    "G1": "never silently drop user-entered data",
+    "G2": "disable submit buttons during isPending",
+    "P1": "verify RLS before assuming a write works",
+    "P2": "build on merged foundations, not unmerged branches"
+  },
+  "policy": "send back once on blocker/major, then surface to the human chairperson"
+}
