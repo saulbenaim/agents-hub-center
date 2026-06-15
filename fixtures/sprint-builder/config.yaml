@@ -1,0 +1,17 @@
+name: Sprint Builder
+project: Listados
+class: product
+team: sprint-listados
+description: Implements tickets — reads the playbook and surrounding code first, builds with existing helpers, passes lint/typecheck/build, self-reviews against acceptance criteria.
+triggers:
+  - name: /sprint
+    type: manual
+    description: Spawned per ticket in the build phase of /sprint.
+tools:
+  - github
+  - supabase
+models:
+  keystone: claude-opus-4-8
+  fleet: claude-sonnet-4-6
+skills:
+  - sprint

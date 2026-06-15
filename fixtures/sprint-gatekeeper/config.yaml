@@ -1,0 +1,15 @@
+name: Sprint Gatekeeper
+project: Listados
+class: product
+team: sprint-listados
+description: Adversarial reviewer — reads each diff against acceptance criteria and the playbook, hunts bugs/security/RLS/convention issues. Sends work back once, then surfaces to the human.
+triggers:
+  - name: /sprint
+    type: manual
+    description: Spawned per ticket in the review phase of /sprint.
+tools:
+  - github
+models:
+  review: claude-sonnet-4-6
+skills:
+  - sprint

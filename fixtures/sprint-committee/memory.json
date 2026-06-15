@@ -1,0 +1,10 @@
+{
+  "planning_heuristics": {
+    "never_parallelize_on_missing_foundation": "Don't send teams at tickets that share a foundation that doesn't exist yet; sequence the keystone solo first.",
+    "close_redundant_tickets": "If a ticket's acceptance criteria are already met by merged work, close it instead of building (e.g. LIS-69 folded into LIS-34)."
+  },
+  "last_sprints": [
+    { "milestone": "M3", "round": 1, "keystone": "LIS-34" },
+    { "milestone": "M3", "round": 2, "built": ["LIS-35"], "closed": ["LIS-69"], "deferred": ["LIS-88"] }
+  ]
+}

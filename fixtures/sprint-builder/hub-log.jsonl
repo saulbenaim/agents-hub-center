@@ -1,0 +1,7 @@
+{"ts": "2026-06-13T23:30:00Z", "agent": "sprint-builder", "event": "build_started", "skill": "sprint", "ticket": "LIS-34", "model": "claude-opus-4-8"}
+{"ts": "2026-06-13T23:46:00Z", "agent": "sprint-builder", "event": "gates_passed", "skill": "sprint", "ticket": "LIS-34", "lint": "pass", "typecheck": "pass", "build": "pass"}
+{"ts": "2026-06-13T23:47:00Z", "agent": "sprint-builder", "event": "build_completed", "skill": "sprint", "ticket": "LIS-34", "files_changed": 12}
+{"ts": "2026-06-14T22:35:00Z", "agent": "sprint-builder", "event": "build_started", "skill": "sprint", "ticket": "LIS-35", "model": "claude-sonnet-4-6"}
+{"ts": "2026-06-14T22:39:00Z", "agent": "sprint-builder", "event": "build_completed", "skill": "sprint", "ticket": "LIS-35", "files_changed": 2}
+{"ts": "2026-06-14T22:46:00Z", "agent": "sprint-builder", "event": "fix_applied", "skill": "sprint", "ticket": "LIS-35", "reason": "gatekeeper send-back: draft modal, silent field drops, isPending guards"}
+{"ts": "2026-06-14T22:52:00Z", "agent": "sprint-builder", "event": "fix_applied", "skill": "sprint", "ticket": "LIS-35", "reason": "owner_id must be profile id, not auth.uid() (RLS)"}

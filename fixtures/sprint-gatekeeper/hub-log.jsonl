@@ -1,0 +1,6 @@
+{"ts": "2026-06-13T23:46:30Z", "agent": "sprint-gatekeeper", "event": "review_started", "skill": "sprint", "ticket": "LIS-34"}
+{"ts": "2026-06-13T23:47:30Z", "agent": "sprint-gatekeeper", "event": "review_passed", "skill": "sprint", "ticket": "LIS-34", "round": 1}
+{"ts": "2026-06-14T22:40:00Z", "agent": "sprint-gatekeeper", "event": "review_started", "skill": "sprint", "ticket": "LIS-35"}
+{"ts": "2026-06-14T22:43:00Z", "agent": "sprint-gatekeeper", "event": "review_failed", "skill": "sprint", "ticket": "LIS-35", "round": 1, "findings": 3, "severity": "major", "action": "sent_back"}
+{"ts": "2026-06-14T22:48:00Z", "agent": "sprint-gatekeeper", "event": "review_passed", "skill": "sprint", "ticket": "LIS-35", "round": 2}
+{"ts": "2026-06-14T22:50:00Z", "agent": "sprint-gatekeeper", "event": "finding_logged", "skill": "sprint", "rule": "P1", "note": "RLS insert policy must be verified — flagged for human"}

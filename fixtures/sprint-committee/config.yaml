@@ -1,0 +1,15 @@
+name: Sprint Committee
+project: Listados
+class: product
+team: sprint-listados
+description: Plans the sprint — reads Linear, builds the dependency graph, finds the keystone, sequences what can parallelize vs what must go first.
+triggers:
+  - name: /sprint
+    type: manual
+    description: Invoked as the first phase of the /sprint skill.
+tools:
+  - linear
+models:
+  planning: claude-opus-4-8
+skills:
+  - sprint

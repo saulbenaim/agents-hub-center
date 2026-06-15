@@ -1,0 +1,5 @@
+{"ts": "2026-06-14T22:55:00Z", "agent": "sprint-retro", "event": "retro_started", "skill": "sprint", "sprint": "M3-r2"}
+{"ts": "2026-06-14T22:55:40Z", "agent": "sprint-retro", "event": "lesson_appended", "skill": "sprint", "rule": "L1", "scope": "listados", "source": "PR #20"}
+{"ts": "2026-06-14T22:55:50Z", "agent": "sprint-retro", "event": "lesson_appended", "skill": "sprint", "rule": "G1", "scope": "general", "source": "PR #19 review"}
+{"ts": "2026-06-14T22:56:00Z", "agent": "sprint-retro", "event": "lesson_appended", "skill": "sprint", "rule": "G2", "scope": "general", "source": "PR #19 review"}
+{"ts": "2026-06-14T22:56:30Z", "agent": "sprint-retro", "event": "sendback_rate_recorded", "skill": "sprint", "sprint": "M3-r2", "tickets": 1, "sent_back": 1, "rate": 1.0}

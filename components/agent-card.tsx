@@ -34,7 +34,7 @@ function classLabel(c: string) {
 }
 
 export function AgentCard({ summary }: { summary: AgentSummary }) {
-  const href = `/agents/${summary.name.toLowerCase()}`;
+  const href = `/agents/${summary.key}`;
   return (
     <Link href={href} className="block focus:outline-none">
       <Card className="transition hover:-translate-y-0.5 hover:shadow-md focus-within:ring-2 focus-within:ring-neutral-300 dark:focus-within:ring-neutral-700">
