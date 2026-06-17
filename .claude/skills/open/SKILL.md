@@ -2,7 +2,7 @@
 name: open
 description: Start-of-session orientation ritual. Pulls the repo, reviews open PRs and their CI/review state, reviews the linked Linear issue and its latest handoff, then synthesizes where you left off and what to do next. The counterpart to /wrap-up.
 argument-hint: "[project/repo or LIS-NN — optional; inferred from cwd/branch]"
-allowed-tools: Bash, Read, Grep, Glob, mcp__claude_ai_Linear__get_issue, mcp__claude_ai_Linear__list_issues, mcp__claude_ai_Linear__list_comments, mcp__claude_ai_Linear__get_project, mcp__claude_ai_Linear__list_projects
+allowed-tools: Bash, Read, Grep, Glob, mcp__plugin_linear_linear__get_issue, mcp__plugin_linear_linear__list_issues, mcp__plugin_linear_linear__list_comments, mcp__plugin_linear_linear__get_project, mcp__plugin_linear_linear__list_projects
 ---
 
 # Open Session
@@ -14,6 +14,10 @@ Pair skill: `/wrap-up` writes everything this skill reads.
 **Argument:** `$0` (optional) = project/repo name or a Linear issue id (`LIS-133`). If omitted, infer from the current directory and branch.
 
 **Posture:** read-mostly. The only writes allowed without asking are `git fetch` and (after confirming a clean tree) `git checkout`/`git pull`. Never mutate Linear or push in this skill — that's `/wrap-up`'s job.
+
+**Machine check — do this first; setups differ across computers, so detect, don't assume:**
+- `gh auth status` — is the GitHub CLI present and authenticated? If not, say so and treat the PR steps as skipped (read-only).
+- Is a Linear MCP server connected this session? Use whichever Linear tools exist — the server may be named `plugin_linear_linear` (the Linear plugin, this machine), `claude_ai_Linear` (the claude.ai connector) on another machine, or be absent entirely. If no Linear server is connected, run in GitHub-only mode and say so in the synthesis. Never hardcode a server name.
 
 ---
 

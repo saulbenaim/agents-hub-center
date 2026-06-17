@@ -2,7 +2,7 @@
 name: wrap-up
 description: End-of-session close-out ritual. Commits and pushes the current work, opens or updates the PR, and CRUDs the linked Linear issue (state + handoff comment + follow-ups) so the session can be resumed on any computer.
 argument-hint: "[project/repo or LIS-NN — optional; inferred from cwd/branch]"
-allowed-tools: Bash, Read, Grep, Glob, mcp__claude_ai_Linear__get_issue, mcp__claude_ai_Linear__list_issues, mcp__claude_ai_Linear__save_issue, mcp__claude_ai_Linear__save_comment, mcp__claude_ai_Linear__list_comments, mcp__claude_ai_Linear__list_issue_statuses, mcp__claude_ai_Linear__get_project, Write
+allowed-tools: Bash, Read, Grep, Glob, Write, mcp__plugin_linear_linear__get_issue, mcp__plugin_linear_linear__list_issues, mcp__plugin_linear_linear__save_issue, mcp__plugin_linear_linear__save_comment, mcp__plugin_linear_linear__list_comments, mcp__plugin_linear_linear__list_issue_statuses, mcp__plugin_linear_linear__get_project
 ---
 
 # Wrap Up Session
@@ -19,6 +19,10 @@ Pair skill: `/open` reads back everything this skill writes.
 - Don't fabricate. If a check fails, a step is skipped, or there's nothing to commit, say so plainly in the final report.
 - Linear/GitHub mutations are real and outward-facing. Before creating **new** Linear issues or force-pushing, state what you're about to do.
 - Keep going through every step even if one is N/A — report each as done / skipped / n/a.
+
+**Machine check — do this first; setups differ across computers, so detect, don't assume:**
+- `gh auth status` — is the GitHub CLI present and authenticated? If not, say so; you can still commit locally, but push/PR steps are skipped until it's set up.
+- Is a Linear MCP server connected this session? Use whichever Linear tools exist — the server may be named `plugin_linear_linear` (the Linear plugin, this machine), `claude_ai_Linear` (the claude.ai connector) on another machine, or be absent entirely. If no Linear server is connected, do the Git/PR half and note in the report that the Linear handoff was skipped (the PR still carries the state). Never hardcode a server name.
 
 ---
 
@@ -77,9 +81,9 @@ Report pass/fail with the failing output summarized. **Do not** silently fix unr
 
 ## Step 5 — CRUD Linear (the handoff)
 
-Using the resolved issue (skip gracefully with a note if none):
+Using the resolved issue (skip gracefully with a note if none, or if no Linear server is connected on this machine):
 
-1. **State:** move the issue to the in-review state if a PR is open and not yet merged (`save_issue`). If the `Closes LIS-NN` integration already handles this, just verify. Don't move it to Done — merge does that.
+1. **State:** check the available states first (`list_issue_statuses`). If an in-review (or equivalent) state exists and a PR is open and unmerged, move the issue there (`save_issue`). If the board has no such state (the LIS board doesn't — it uses In Progress + the attached PR link), leave it In Progress and attach the PR link instead. If the `Closes LIS-NN` integration already moved it, just verify. Never move it to Done — merge does that.
 2. **Handoff comment** (`save_comment`) — this is what `/open` reads next time. Structure it exactly:
 
    ```
