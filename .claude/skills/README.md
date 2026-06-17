@@ -11,6 +11,8 @@ The two are a pair: the handoff comment `/wrap-up` writes is exactly what `/open
 
 These are **cross-project** skills, so they must live at the **user level** — only `~/.claude/skills` loads in every repo. This repo is just the synced source of truth.
 
+**macOS / Linux**
+
 ```sh
 # from a fresh clone of agents-hub-center
 cp -r .claude/skills/open  ~/.claude/skills/open
@@ -18,6 +20,19 @@ cp -r .claude/skills/wrap-up ~/.claude/skills/wrap-up
 # or symlink so updates here flow through:
 #   ln -s "$PWD/.claude/skills/open"   ~/.claude/skills/open
 #   ln -s "$PWD/.claude/skills/wrap-up" ~/.claude/skills/wrap-up
+```
+
+**Windows (PowerShell)**
+
+```powershell
+# from a fresh clone of agents-hub-center (run in the repo root)
+$dest = "$HOME\.claude\skills"
+New-Item -ItemType Directory -Force $dest | Out-Null
+Copy-Item -Recurse -Force .\.claude\skills\open    $dest   # overwrites any existing copy
+Copy-Item -Recurse -Force .\.claude\skills\wrap-up $dest
+# or symlink so updates here flow through (needs Developer Mode or an elevated shell):
+#   New-Item -ItemType SymbolicLink -Path "$dest\open"    -Target "$PWD\.claude\skills\open"
+#   New-Item -ItemType SymbolicLink -Path "$dest\wrap-up" -Target "$PWD\.claude\skills\wrap-up"
 ```
 
 Then `/open` and `/wrap-up` are available in any project. Edit the canonical copies here and re-sync (or rely on the symlink).
