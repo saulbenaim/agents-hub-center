@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AgentOps Hub",
-  description: "Read-only dashboard for the Maintly agent fleet",
+  description: "Read-only dashboard for Saul's agents across every project",
 };
 
 export default function RootLayout({

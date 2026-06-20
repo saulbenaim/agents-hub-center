@@ -1,8 +1,10 @@
 # AgentOps Hub
 
-Read-only dashboard for the Maintly agent fleet. Lives at **hub.maintly.com**.
+Read-only dashboard for **all of Saul's agents**, across every project (Maintly, Listados, personal). Lives at **hub.maintly.com**.
 
-> **v0 status**: scaffold + Agents List page only. Reads from in-repo fixtures. Once Homie is pushing to Supabase Storage (MAI-10), the data adapter swaps over — no page or component changes required.
+> **Scope**: This hub is the single place to **review** Saul's whole agent fleet — not one project's. Create/manage capabilities are planned (see `docs/create-manage-plan.md`); v0 is review-only.
+>
+> **v0 status**: scaffold + Agents List page only. Reads from in-repo fixtures. Once agents are pushing to Supabase Storage (MAI-10), the data adapter swaps over — no page or component changes required.
 
 ## Stack
 - Next.js 15 App Router · TypeScript (strict) · Tailwind 4
@@ -28,7 +30,7 @@ npm install
 npm run dev
 ```
 
-Open <http://localhost:3000>. You should see one card for **Homie** (Maintly · Infrastructure). Click it → `/agents/homie` stub.
+Open <http://localhost:3000>. You should see a card per agent in the roster — **Homie** (Maintly · Infrastructure) plus the four `/sprint` agents (Listados). Click any card → `/agents/<key>` stub.
 
 ## Build / lint
 

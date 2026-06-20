@@ -51,7 +51,7 @@ export default async function HomePage() {
       <header className="mb-8">
         <h1 className="text-2xl font-semibold tracking-tight">Agents</h1>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
-          AgentOps Hub · read-only dashboard
+          AgentOps Hub · all your agents, read-only
         </p>
       </header>
       <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
