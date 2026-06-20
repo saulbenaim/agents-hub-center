@@ -25,8 +25,22 @@ const dotLabel: Record<StatusDot, string> = {
   grey: "Paused",
 };
 
+// Stable color per project so each one reads distinctly across the fleet.
+// Any project not explicitly mapped gets a deterministic tone from the palette,
+// so new projects stay visually consistent run-to-run without code changes.
+const PROJECT_TONE_PALETTE = ["pink", "blue", "green", "amber"] as const;
+const PROJECT_TONE_OVERRIDES: Record<string, (typeof PROJECT_TONE_PALETTE)[number]> = {
+  maintly: "pink",
+  listados: "blue",
+  personal: "green",
+};
+
 function projectTone(project: string) {
-  return project.toLowerCase() === "maintly" ? "pink" : "blue";
+  const key = project.toLowerCase();
+  if (PROJECT_TONE_OVERRIDES[key]) return PROJECT_TONE_OVERRIDES[key];
+  let hash = 0;
+  for (let i = 0; i < key.length; i++) hash = (hash * 31 + key.charCodeAt(i)) | 0;
+  return PROJECT_TONE_PALETTE[Math.abs(hash) % PROJECT_TONE_PALETTE.length];
 }
 
 function classLabel(c: string) {
